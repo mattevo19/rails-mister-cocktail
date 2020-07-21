@@ -8,6 +8,17 @@
 puts "cleaning database"
 Ingredient.destroy_all
 
+puts "creating cocktails"
+
+Cocktail.create(name: "white russian")
+Cocktail.create(name: "black russian")
+Cocktail.create(name: "moscow mule")
+Cocktail.create(name: "manhatten")
+Cocktail.create(name: "rum and coke")
+Cocktail.create(name: "fanta and rum")
+Cocktail.create(name: "gin and tonic")
+Cocktail.create(name: "hulk")
+
 puts "creating ingredients"
 
 Ingredient.create(name: "lemon")
@@ -20,5 +31,6 @@ Ingredient.create(name: "coke")
 Ingredient.create(name: "fanta")
 Ingredient.create(name: "gin")
 Ingredient.create(name: "tonic")
+Ingredient.create(name: "orange")
 
 puts "finished"
