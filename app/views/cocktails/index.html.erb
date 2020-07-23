@@ -1,5 +1,17 @@
+<div class="container">
 <h1>Cocktail list</h1>
 
+</div>
+<div class="container">
 <% @cocktails.each do |cocktail| %>
-<h3><%= cocktail.name %></h3>
+<div class="card" style="width: 18rem;">
+  <%= image_tag "drink.jpg", alt: "drink", width: 200 %>
+  <div class="card-body">
+    <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+  </div>
+</div>
+<br>
 <% end %>
+<%= link_to "New Cocktail", new_cocktail_path, class: "btn btn-danger" %>
+</div>
+
