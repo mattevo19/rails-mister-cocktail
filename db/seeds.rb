@@ -10,16 +10,16 @@ Dose.destroy_all
 Ingredient.destroy_all
 Cocktail.destroy_all
 
-puts "creating cocktails"
+# puts "creating cocktails"
 
-Cocktail.create(name: "white russian")
-Cocktail.create(name: "black russian")
-Cocktail.create(name: "moscow mule")
-Cocktail.create(name: "manhatten")
-Cocktail.create(name: "rum and coke")
-Cocktail.create(name: "fanta and rum")
-Cocktail.create(name: "gin and tonic")
-Cocktail.create(name: "hulk")
+# Cocktail.create(name: "white russian")
+# Cocktail.create(name: "black russian")
+# Cocktail.create(name: "moscow mule")
+# Cocktail.create(name: "manhatten")
+# Cocktail.create(name: "rum and coke")
+# Cocktail.create(name: "fanta and rum")
+# Cocktail.create(name: "gin and tonic")
+# Cocktail.create(name: "hulk")
 
 puts "creating ingredients"
 
