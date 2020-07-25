@@ -8,7 +8,7 @@
 puts "cleaning database"
 Dose.destroy_all
 Ingredient.destroy_all
-Cocktail.destroy_all
+# Cocktail.destroy_all
 
 # puts "creating cocktails"
 
@@ -23,17 +23,17 @@ Cocktail.destroy_all
 
 puts "creating ingredients"
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Ingredient.create(name: "lime")
-Ingredient.create(name: "vodka")
-Ingredient.create(name: "rum")
-Ingredient.create(name: "coke")
-Ingredient.create(name: "fanta")
-Ingredient.create(name: "gin")
-Ingredient.create(name: "tonic")
-Ingredient.create(name: "orange")
-Ingredient.create(name: "milk")
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Mint leaves")
+Ingredient.create(name: "Lime")
+Ingredient.create(name: "Vodka")
+Ingredient.create(name: "Rum")
+Ingredient.create(name: "Coke")
+Ingredient.create(name: "Fanta")
+Ingredient.create(name: "Gin")
+Ingredient.create(name: "Tonic")
+Ingredient.create(name: "Orange")
+Ingredient.create(name: "Milk")
 
 puts "finished"
