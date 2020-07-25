@@ -9,12 +9,12 @@
       <div class="card" style="width: 402px">
         <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
         <div class="card-body">
-          <h5 class="card-title"><%= link_to cocktail.name, cocktail_path(cocktail) %></h5>
+          <h5 class="card-title"><%= link_to cocktail.name.capitalize, cocktail_path(cocktail), style: "text-decoration: none; color: #FF621B" %></h5>
           <ul>
             <% cocktail.doses.each do |dose| %>
-            <li>
-              <%= dose.description %>
-              <%= dose.ingredient.name %>
+            <li  style= "color: #808080">
+              <%= dose.description.capitalize %>
+              <%= dose.ingredient.name.capitalize %>
             </li>
             <% end %>
           </ul>
